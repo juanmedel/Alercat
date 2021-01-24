@@ -59,7 +59,7 @@
                                 <li>
                                     <a href="javascript:void(0)"><i class="fa fa-tag"></i><span>Mantenimientos</span></a>
                                     <ul class="collapse">
-                                        <li><a href=""><i class="fa fa-cubes"></i> Categorias</a></li>
+                                        <li><a href=""><i class="fa fa-cubes"></i> Productos</a></li>
                                         <li><a href=""><i class="fa fa-archive"></i> Productos</a></li>
                                     </ul>
                                 </li>
@@ -97,7 +97,58 @@
                 </div>
                 <!-- header area end -->
                 <div class="main-content-inner">
-
+                      <div class="row" style="padding-top: 30px" >
+                        <div class="col-12">
+                            <div class="card-body">
+                                <h6>CATEGORIAS</h6>                           
+                                <form id=""FrmProducto">
+                                    <div class="row mt-3">
+                                        <div class="form-group col-sm-9 col-12">
+                                            <input type="text" id="txtNombreProducto" name="txtNombreProducto" class="form-control form-control-sm" placeholder="Nombre">
+                                        </div>
+                                        <div class="col-sm-3 col-12">
+                                            <button type="submit" id="btnBuscarProducto" class="btn-primary btn-xs mr-3"><i class="fa fa-search" arial-hidden="true"></i> BUSCAR </button>
+                                            <button type="button" id="btnAbrirProducto" class="btn-primary btn-xs"><i class="fa fa-plus-square" arial-hidden="true"></i>+</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-bordered">
+                                                <thead class="bg-primary">
+                                                    <tr class="text-white" >
+                                                        <th>NOMBRE</th>
+                                                        <th>PRECIO</th>
+                                                        <th>STOCK</th>
+                                                        <th>STOCK MIN</th>
+                                                        <th>STOCK MAX</th>
+                                                        <th style="width: 15%">ACCIONES</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="tbodyProducto">
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <select  id="sizePageProducto" name="sizePageProducto" class="form-control form-control-sm">
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                    </select>    
+                                </div>
+                                <div class="col-md-9 col-12">
+                                    <nav>
+                                        <ul id="paginationProducto" class="pagination pagination-sm justify-content-end">
+                                            
+                                        </ul>
+                                    </nav> 
+                                </div>
+                            </div>
+                    </div>
                 </div>
             </div>
             <!-- main content area end -->

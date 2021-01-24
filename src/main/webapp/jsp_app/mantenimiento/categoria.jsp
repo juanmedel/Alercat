@@ -6,7 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="es">
 
     <head>
         <meta charset="utf-8">
@@ -97,7 +97,54 @@
                 </div>
                 <!-- header area end -->
                 <div class="main-content-inner">
-                  
+                      <div class="row" style="padding-top: 30px" >
+                        <div class="col-12">
+                            <div class="card-body">
+                                <h6>CATEGORIAS</h6>                           
+                                <form id=""FrmCategoria">
+                                    <div class="row mt-3">
+                                        <div class="form-group col-sm-9 col-12">
+                                            <input type="text" id="txtNombreCategoria" name="txtNombreCategoria" class="form-control form-control-sm" placeholder="Nombre">
+                                        </div>
+                                        <div class="col-sm-3 col-12">
+                                            <button type="submit" id="btnBuscarCategoria" class="btn-primary btn-xs mr-3"><i class="fa fa-search" arial-hidden="true"></i> BUSCAR </button>
+                                            <button type="button" id="btnAbrirCategoria" class="btn-primary btn-xs"><i class="fa fa-plus-square" arial-hidden="true"></i>+</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-bordered">
+                                                <thead class="bg-primary">
+                                                    <tr class="text-white" >
+                                                        <th>NOMBRE</th>
+                                                        <th style="width: 15%">ACCIONES</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="tbodyCategoria">
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <select  id="sizePageCategoria" name="sizePageCategoria" class="form-control form-control-sm">
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                    </select>    
+                                </div>
+                                <div class="col-md-9 col-12">
+                                    <nav>
+                                        <ul id="paginationCategoria" class="pagination pagination-sm justify-content-end">
+                                            
+                                        </ul>
+                                    </nav> 
+                                </div>
+                            </div>
+                    </div>
                 </div>
             </div>
             <!-- main content area end -->
